@@ -1,0 +1,29 @@
+.feature-section__list {
+  display: flex;
+  column-gap: 30px;
+
+  .sub-title {
+    @include fonts();
+    text-transform: uppercase;
+  }
+
+  .feature-section__description {
+    @include fonts($fw: 400, $lh: 1.71);
+    color: var(--secondary-text-color-theme-light);
+  }
+}
+
+.feature-section__card {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.feature-section__icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}

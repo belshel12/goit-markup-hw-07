@@ -1,0 +1,21 @@
+.page-logo {
+  @extend %common-logo;
+}
+
+.page-logo_theme_light {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  span {
+    color: black;
+  }
+}
+
+.page-logo_theme_dark {
+  margin-bottom: 20px;
+
+  span {
+    color: var(--primary-text-color-theme-dark);
+  }
+}

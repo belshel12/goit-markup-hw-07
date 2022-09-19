@@ -1,0 +1,129 @@
+.page-footer {
+  background: var(--primary-dark-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer-address-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+
+.address-item {
+  a {
+    font-style: normal;
+    @include fonts(14px, 1.71, 700);
+    color: var(--secondary-text-color-theme-dark);
+  }
+
+  .map-link {
+    color: var(--primary-text-color-theme-dark);
+  }
+
+  .link {
+    transition: color var(--transition-dur-and-func);
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  p {
+    @include fonts();
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-dark);
+    margin-bottom: 20px;
+  }
+}
+
+.footer-form-container {
+  margin-left: auto;
+
+  p {
+    @include fonts();
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-dark);
+    margin-bottom: 20px;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.footer-form-label {
+  width: 358px;
+  height: 50px;
+}
+
+.footer-form-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: var(--primary-dark-bg-color);
+  color: var(--primary-text-color-theme-dark);
+  transform: border-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+  &:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &::placeholder {
+    @include fonts(16px, 1.25, 400);
+    align-items: center;
+    color: var(--placeholder-color-theme-dark);
+  }
+}
+
+.footer-form-submit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  transition: box-shadow var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--button-hover-accent-color);
+  }
+
+  .submit-title {
+    @include fonts(16px, 1.87, 700, 0.06em);
+    color: var(--primary-text-color-theme-dark);
+  }
+
+  .submit-icon {
+    fill: var(--secondary-icon-fill);
+  }
+}
