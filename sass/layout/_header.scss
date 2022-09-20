@@ -23,9 +23,9 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    &.current {
-      color: var(--accent-color);
-    }
+	 &--current {
+		color: var(--accent-color);
+	 }
 
     &:hover,
     &:focus {
